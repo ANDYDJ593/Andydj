@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andy DJ | Packs Pro</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">ANDY <span>DJ</span></div>
+        <nav class="nav-links">
+            <a href="index.html">Inicio</a>
+            <a href="packgratis.html">Pack Gratis</a>
+            <a href="packpro.html" class="active">Pack Pro</a>
+            <a href="admin.html">Admin</a>
+        </nav>
+        <div class="menu-toggle" id="mobile-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h2>Packs <span>Pro</span></h2>
+            <p>Material exclusivo, alta calidad e intros profesionales para DJs de nivel.</p>
+        </div>
+    </section>
+
+    <section class="music">
+        <div class="container">
+            <div class="mix-grid">
+                <div class="mix-card featured">
+                    <div class="badge pro">PRO</div>
+                    <div class="mix-icon"><i class="fas fa-crown"></i></div>
+                    <h3>Andy DJ - Gold Edition Pro</h3>
+                    <p>Extended mixes, intros exclusivas, remixes VIP y acapellas de alta calidad.</p>
+                    <button class="play-btn pro-btn" onclick="playAlert('Andy DJ - Gold Edition Pro')"><i class="fas fa-bolt"></i> Obtener Pro</button>
+                </div>
+
+                <div class="mix-card featured">
+                    <div class="badge pro">PRO</div>
+                    <div class="mix-icon"><i class="fas fa-fire"></i></div>
+                    <h3>Club Master Remixes 2026</h3>
+                    <p>Versiones extendidas y transiciones limpias exclusivas para discoteca.</p>
+                    <button class="play-btn pro-btn" onclick="playAlert('Club Master Remixes 2026')"><i class="fas fa-bolt"></i> Obtener Pro</button>
+                </div>
+
+                <div class="mix-card featured">
+                    <div class="badge pro">PRO</div>
+                    <div class="mix-icon"><i class="fas fa-gem"></i></div>
+                    <h3>Mega Vault VIP Edition</h3>
+                    <p>Biblioteca completa con lanzamientos mensuales y soporte directo.</p>
+                    <button class="play-btn pro-btn" onclick="playAlert('Mega Vault VIP Edition')"><i class="fas fa-bolt"></i> Obtener Pro</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Andy DJ. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
