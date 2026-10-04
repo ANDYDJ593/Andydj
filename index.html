@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andy DJ | Official Website</title>
+    <!-- Enlace a los estilos CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts & FontAwesome para iconos -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- BARRA DE NAVEGACIÓN -->
+    <header>
+        <div class="logo">ANDY <span>DJ</span></div>
+        <nav class="nav-links">
+            <a href="#inicio">Inicio</a>
+            <a href="#sobre-mi">Sobre Mí</a>
+            <a href="#musica">Música & Mixes</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+        <div class="menu-toggle" id="mobile-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <!-- SECCIÓN INICIO / HERO -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1>ANDY <span>DJ</span></h1>
+            <p>Siente el bajo, vive la música. El mejor beat para tus noches.</p>
+            <a href="#musica" class="btn-neon">Escuchar Mixes</a>
+        </div>
+        <div class="equalizer-bars">
+            <span></span><span></span><span></span><span></span><span></span>
+        </div>
+    </section>
+
+    <!-- SECCIÓN SOBRE MÍ -->
+    <section id="sobre-mi" class="about">
+        <div class="container">
+            <h2>Sobre <span>Mí</span></h2>
+            <div class="about-grid">
+                <div class="about-img">
+                    <div class="img-frame">
+                        <i class="fas fa-headphones-alt"></i>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h3>¡Hola! Soy Andy DJ</h3>
+                    <p>Apasionado por la música electrónica, el reggaetón, el crossover y los mejores ritmos de discoteca. Con años haciendo vibrar la pista de baile, mi objetivo es transformar cada evento en una experiencia inolvidable llena de energía y buen sonido.</p>
+                    <div class="stats">
+                        <div class="stat-box">
+                            <h4>+50</h4>
+                            <p>Eventos</p>
+                        </div>
+                        <div class="stat-box">
+                            <h4>100%</h4>
+                            <p>Energía</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN MÚSICA / MIXES -->
+    <section id="musica" class="music">
+        <div class="container">
+            <h2>Últimos <span>Mixes</span></h2>
+            <p class="subtitle">Sube el volumen y disfruta de mis sesiones en vivo.</p>
+            
+            <div class="mix-grid">
+                <div class="mix-card">
+                    <div class="mix-icon"><i class="fas fa-compact-disc fa-spin"></i></div>
+                    <h3>Electro Party Mix 2026</h3>
+                    <p>Los mejores remixes del momento para la rumba.</p>
+                    <button class="play-btn" onclick="playAlert('Electro Party Mix 2026')"><i class="fas fa-play"></i> Reproducir</button>
+                </div>
+
+                <div class="mix-card">
+                    <div class="mix-icon"><i class="fas fa-compact-disc fa-spin"></i></div>
+                    <h3>Crossover Session Vol. 4</h3>
+                    <p>De todo un poco: Reggaetón, Techno y Dembow.</p>
+                    <button class="play-btn" onclick="playAlert('Crossover Session Vol. 4')"><i class="fas fa-play"></i> Reproducir</button>
+                </div>
+
+                <div class="mix-card">
+                    <div class="mix-icon"><i class="fas fa-compact-disc fa-spin"></i></div>
+                    <h3>Deep House Night</h3>
+                    <p>Vibra nocturna y electrónica fina.</p>
+                    <button class="play-btn" onclick="playAlert('Deep House Night')"><i class="fas fa-play"></i> Reproducir</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN CONTACTO -->
+    <section id="contacto" class="contact">
+        <div class="container">
+            <h2>Contrataciones & <span>Booking</span></h2>
+            <p>¿Tienes una fiesta, evento privado o quieres cotizar un show? Escríbeme directo.</p>
+            
+            <div class="contact-box">
+                <a href="https://wa.me/" target="_blank" class="social-btn whatsapp">
+                    <i class="fab fa-whatsapp"></i> WhatsApp Directo
+                </a>
+                <a href="#" class="social-btn instagram">
+                    <i class="fab fa-instagram"></i> Instagram
+                </a>
+                <a href="#" class="social-btn tiktok">
+                    <i class="fab fa-tiktok"></i> TikTok
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <p>&copy; 2026 Andy DJ. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Enlace al archivo JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
