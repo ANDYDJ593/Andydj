@@ -28,7 +28,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px 50px;
-    background: rgba(11, 11, 15, 0.9);
+    background: rgba(11, 11, 15, 0.95);
     backdrop-filter: blur(10px);
     z-index: 1000;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -57,7 +57,7 @@ header {
     transition: 0.3s;
 }
 
-.nav-links a:hover {
+.nav-links a:hover, .nav-links a.active {
     color: #00f3ff;
     text-shadow: 0 0 8px rgba(0, 243, 255, 0.8);
 }
@@ -68,7 +68,7 @@ header {
     cursor: pointer;
 }
 
-/* SECCIÓN INICIO (HERO) */
+/* HERO SECTION */
 .hero {
     height: 100vh;
     display: flex;
@@ -78,7 +78,6 @@ header {
     text-align: center;
     background: radial-gradient(circle at center, #1a103c 0%, #0b0b0f 70%);
     padding: 0 20px;
-    position: relative;
 }
 
 .hero-content h1 {
@@ -99,9 +98,16 @@ header {
     margin-bottom: 30px;
 }
 
+.hero-btns {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 .btn-neon {
     display: inline-block;
-    padding: 12px 35px;
+    padding: 12px 30px;
     background: transparent;
     color: #00f3ff;
     border: 2px solid #00f3ff;
@@ -111,6 +117,7 @@ header {
     text-transform: uppercase;
     box-shadow: 0 0 15px rgba(0, 243, 255, 0.4);
     transition: 0.3s;
+    cursor: pointer;
 }
 
 .btn-neon:hover {
@@ -119,19 +126,51 @@ header {
     box-shadow: 0 0 25px #00f3ff;
 }
 
+.pro-glow {
+    color: #ff007f;
+    border-color: #ff007f;
+    box-shadow: 0 0 15px rgba(255, 0, 127, 0.4);
+}
+
+.pro-glow:hover {
+    background: #ff007f;
+    color: #fff;
+    box-shadow: 0 0 25px #ff007f;
+}
+
+/* PAGE HEADER */
+.page-header {
+    padding: 150px 0 50px 0;
+    text-align: center;
+    background: radial-gradient(circle at center, #1a103c 0%, #0b0b0f 80%);
+}
+
+.page-header h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.page-header h2 span {
+    color: #00f3ff;
+}
+
+.page-header p {
+    color: #888;
+}
+
 /* SECCIÓN SOBRE MÍ */
 .about {
     padding: 100px 0;
     background: #111118;
 }
 
-.about h2, .music h2, .contact h2 {
+.about h2, .music h2, .contact h2, .admin-section h2 {
     text-align: center;
     font-size: 2.5rem;
-    margin-bottom: 50px;
+    margin-bottom: 15px;
 }
 
-.about h2 span, .music h2 span, .contact h2 span {
+.about h2 span, .music h2 span, .contact h2 span, .admin-section h2 span {
     color: #00f3ff;
 }
 
@@ -190,15 +229,9 @@ header {
     font-size: 0.9rem;
 }
 
-/* SECCIÓN PACKS FREE Y PRO */
+/* SECCIÓN MÚSICA / PACKS */
 .music {
-    padding: 100px 0;
-}
-
-.music .subtitle {
-    text-align: center;
-    color: #888;
-    margin-bottom: 50px;
+    padding: 80px 0;
 }
 
 .mix-grid {
@@ -293,7 +326,62 @@ header {
     box-shadow: 0 0 15px #00f3ff;
 }
 
-/* SECCIÓN CONTACTO */
+/* ADMIN SECTION */
+.admin-section {
+    padding: 140px 0 80px 0;
+    background: #0b0b0f;
+}
+
+.admin-section .subtitle {
+    text-align: center;
+    color: #888;
+    margin-bottom: 40px;
+}
+
+.admin-form-box {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #15151f;
+    padding: 40px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 0 0 20px rgba(0, 243, 255, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #00f3ff;
+    font-size: 0.9rem;
+}
+
+.form-group input, .form-group textarea, .form-group select {
+    width: 100%;
+    padding: 12px;
+    background: #0b0b0f;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.form-group input:focus, .form-group textarea:focus, .form-group select:focus {
+    outline: none;
+    border-color: #00f3ff;
+    box-shadow: 0 0 8px rgba(0, 243, 255, 0.4);
+}
+
+.full-width {
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* CONTACTO */
 .contact {
     padding: 100px 0;
     background: #111118;
@@ -343,7 +431,7 @@ footer {
     border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-/* RESPONSIVE DESIGN */
+/* RESPONSIVE */
 @media (max-width: 768px) {
     .nav-links {
         display: none;
