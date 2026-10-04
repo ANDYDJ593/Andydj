@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andy DJ | Panel Admin</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">ANDY <span>DJ [ADMIN]</span></div>
+        <nav class="nav-links">
+            <a href="index.html">Ver Web</a>
+            <a href="packgratis.html">Pack Gratis</a>
+            <a href="packpro.html">Pack Pro</a>
+            <a href="admin.html" class="active">Admin</a>
+        </nav>
+        <div class="menu-toggle" id="mobile-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <section class="admin-section">
+        <div class="container">
+            <h2>Panel de <span>Control</span></h2>
+            <p class="subtitle">Sube o gestiona nuevos packs para la web.</p>
+
+            <div class="admin-form-box">
+                <form id="uploadForm" onsubmit="handleUpload(event)">
+                    <div class="form-group">
+                        <label><i class="fas fa-tag"></i> Título del Pack:</label>
+                        <input type="text" id="packTitle" placeholder="Ej. Reggaetón Perreo Vol. 2" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label><i class="fas fa-align-left"></i> Descripción:</label>
+                        <textarea id="packDesc" rows="3" placeholder="Breve detalle de lo que incluye el pack..." required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label><i class="fas fa-layer-group"></i> Categoría:</label>
+                        <select id="packCategory" required>
+                            <option value="free">Pack Gratis (Free)</option>
+                            <option value="pro">Pack Pro (Pro)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label><i class="fas fa-link"></i> Enlace de Descarga:</label>
+                        <input type="url" id="packLink" placeholder="https://mega.nz/... o Google Drive" required>
+                    </div>
+
+                    <button type="submit" class="btn-neon full-width">Publicar Pack</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Andy DJ. Panel de Administración.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
