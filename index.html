@@ -4,21 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Andy DJ | Official Website</title>
-    <!-- Enlace a los estilos CSS -->
     <link rel="stylesheet" href="style.css">
-    <!-- Google Fonts & FontAwesome para iconos -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-    <!-- BARRA DE NAVEGACIÓN -->
     <header>
         <div class="logo">ANDY <span>DJ</span></div>
         <nav class="nav-links">
-            <a href="#inicio">Inicio</a>
-            <a href="#sobre-mi">Sobre Mí</a>
-            <a href="#packs">Pack Free & Pro</a>
+            <a href="index.html" class="active">Inicio</a>
+            <a href="packgratis.html">Pack Gratis</a>
+            <a href="packpro.html">Pack Pro</a>
+            <a href="admin.html">Admin</a>
             <a href="#contacto">Contacto</a>
         </nav>
         <div class="menu-toggle" id="mobile-menu">
@@ -26,19 +24,17 @@
         </div>
     </header>
 
-    <!-- SECCIÓN INICIO / HERO -->
     <section id="inicio" class="hero">
         <div class="hero-content">
             <h1>ANDY <span>DJ</span></h1>
             <p>Siente el bajo, vive la música. El mejor beat para tus noches.</p>
-            <a href="#packs" class="btn-neon">Ver Packs</a>
-        </div>
-        <div class="equalizer-bars">
-            <span></span><span></span><span></span><span></span><span></span>
+            <div class="hero-btns">
+                <a href="packgratis.html" class="btn-neon">Ver Packs Gratis</a>
+                <a href="packpro.html" class="btn-neon pro-glow">Ver Packs Pro</a>
+            </div>
         </div>
     </section>
 
-    <!-- SECCIÓN SOBRE MÍ -->
     <section id="sobre-mi" class="about">
         <div class="container">
             <h2>Sobre <span>Mí</span></h2>
@@ -50,15 +46,15 @@
                 </div>
                 <div class="about-text">
                     <h3>¡Hola! Soy Andy DJ</h3>
-                    <p>Apasionado por la música electrónica, el reggaetón, el crossover y los mejores ritmos de discoteca. Con años haciendo vibrar la pista de baile, mi objetivo es transformar cada evento en una experiencia inolvidable llena de energía y buen sonido.</p>
+                    <p>Apasionado por la música electrónica, el reggaetón y los mejores ritmos. Proveedor de ediciones, intros y remixes exclusivos para DJs profesionales y aficionados.</p>
                     <div class="stats">
                         <div class="stat-box">
                             <h4>+50</h4>
-                            <p>Eventos</p>
+                            <p>Packs Lanzados</p>
                         </div>
                         <div class="stat-box">
                             <h4>100%</h4>
-                            <p>Energía</p>
+                            <p>Calidad Audio</p>
                         </div>
                     </div>
                 </div>
@@ -66,49 +62,10 @@
         </div>
     </section>
 
-    <!-- SECCIÓN PACK FREE Y PRO -->
-    <section id="packs" class="music">
-        <div class="container">
-            <h2>Pack <span>Free & Pro</span></h2>
-            <p class="subtitle">Descarga los mejores remixes y ediciones exclusivas para tus sets.</p>
-            
-            <div class="mix-grid">
-                <!-- PACK FREE 1 -->
-                <div class="mix-card">
-                    <div class="badge free">FREE</div>
-                    <div class="mix-icon"><i class="fas fa-box-open"></i></div>
-                    <h3>Pack Reggaetón Vol. 1</h3>
-                    <p>Ediciones especiales y edits listos para mezclar en vivo (Gratis).</p>
-                    <button class="play-btn" onclick="playAlert('Pack Reggaetón Vol. 1 (Free)')"><i class="fas fa-download"></i> Descargar Free</button>
-                </div>
-
-                <!-- PACK PRO 1 -->
-                <div class="mix-card featured">
-                    <div class="badge pro">PRO</div>
-                    <div class="mix-icon"><i class="fas fa-crown"></i></div>
-                    <h3>Andy DJ - Gold Edition Pro</h3>
-                    <p>Extended mixes, intros exclusivas, remixes VIP y acapellas de alta calidad.</p>
-                    <button class="play-btn pro-btn" onclick="playAlert('Andy DJ - Gold Edition Pro')"><i class="fas fa-bolt"></i> Obtener Pro</button>
-                </div>
-
-                <!-- PACK FREE 2 -->
-                <div class="mix-card">
-                    <div class="badge free">FREE</div>
-                    <div class="mix-icon"><i class="fas fa-box-open"></i></div>
-                    <h3>Electro & Guaracha Starter</h3>
-                    <p>Temas esenciales y loops para armar la rumba sin costo.</p>
-                    <button class="play-btn" onclick="playAlert('Electro & Guaracha Starter (Free)')"><i class="fas fa-download"></i> Descargar Free</button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- SECCIÓN CONTACTO -->
     <section id="contacto" class="contact">
         <div class="container">
             <h2>Contrataciones & <span>Booking</span></h2>
             <p>¿Tienes una fiesta, evento privado o quieres cotizar un show? Escríbeme directo.</p>
-            
             <div class="contact-box">
                 <a href="https://wa.me/" target="_blank" class="social-btn whatsapp">
                     <i class="fab fa-whatsapp"></i> WhatsApp Directo
@@ -123,12 +80,10 @@
         </div>
     </section>
 
-    <!-- PIE DE PÁGINA -->
     <footer>
         <p>&copy; 2026 Andy DJ. Todos los derechos reservados.</p>
     </footer>
 
-    <!-- Enlace al archivo JavaScript -->
     <script src="script.js"></script>
 </body>
 </html>
