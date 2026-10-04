@@ -18,7 +18,7 @@
         <nav class="nav-links">
             <a href="#inicio">Inicio</a>
             <a href="#sobre-mi">Sobre Mí</a>
-            <a href="#musica">Música & Mixes</a>
+            <a href="#packs">Pack Free & Pro</a>
             <a href="#contacto">Contacto</a>
         </nav>
         <div class="menu-toggle" id="mobile-menu">
@@ -31,7 +31,7 @@
         <div class="hero-content">
             <h1>ANDY <span>DJ</span></h1>
             <p>Siente el bajo, vive la música. El mejor beat para tus noches.</p>
-            <a href="#musica" class="btn-neon">Escuchar Mixes</a>
+            <a href="#packs" class="btn-neon">Ver Packs</a>
         </div>
         <div class="equalizer-bars">
             <span></span><span></span><span></span><span></span><span></span>
@@ -66,32 +66,38 @@
         </div>
     </section>
 
-    <!-- SECCIÓN MÚSICA / MIXES -->
-    <section id="musica" class="music">
+    <!-- SECCIÓN PACK FREE Y PRO -->
+    <section id="packs" class="music">
         <div class="container">
-            <h2>Últimos <span>Mixes</span></h2>
-            <p class="subtitle">Sube el volumen y disfruta de mis sesiones en vivo.</p>
+            <h2>Pack <span>Free & Pro</span></h2>
+            <p class="subtitle">Descarga los mejores remixes y ediciones exclusivas para tus sets.</p>
             
             <div class="mix-grid">
+                <!-- PACK FREE 1 -->
                 <div class="mix-card">
-                    <div class="mix-icon"><i class="fas fa-compact-disc fa-spin"></i></div>
-                    <h3>Electro Party Mix 2026</h3>
-                    <p>Los mejores remixes del momento para la rumba.</p>
-                    <button class="play-btn" onclick="playAlert('Electro Party Mix 2026')"><i class="fas fa-play"></i> Reproducir</button>
+                    <div class="badge free">FREE</div>
+                    <div class="mix-icon"><i class="fas fa-box-open"></i></div>
+                    <h3>Pack Reggaetón Vol. 1</h3>
+                    <p>Ediciones especiales y edits listos para mezclar en vivo (Gratis).</p>
+                    <button class="play-btn" onclick="playAlert('Pack Reggaetón Vol. 1 (Free)')"><i class="fas fa-download"></i> Descargar Free</button>
                 </div>
 
-                <div class="mix-card">
-                    <div class="mix-icon"><i class="fas fa-compact-disc fa-spin"></i></div>
-                    <h3>Crossover Session Vol. 4</h3>
-                    <p>De todo un poco: Reggaetón, Techno y Dembow.</p>
-                    <button class="play-btn" onclick="playAlert('Crossover Session Vol. 4')"><i class="fas fa-play"></i> Reproducir</button>
+                <!-- PACK PRO 1 -->
+                <div class="mix-card featured">
+                    <div class="badge pro">PRO</div>
+                    <div class="mix-icon"><i class="fas fa-crown"></i></div>
+                    <h3>Andy DJ - Gold Edition Pro</h3>
+                    <p>Extended mixes, intros exclusivas, remixes VIP y acapellas de alta calidad.</p>
+                    <button class="play-btn pro-btn" onclick="playAlert('Andy DJ - Gold Edition Pro')"><i class="fas fa-bolt"></i> Obtener Pro</button>
                 </div>
 
+                <!-- PACK FREE 2 -->
                 <div class="mix-card">
-                    <div class="mix-icon"><i class="fas fa-compact-disc fa-spin"></i></div>
-                    <h3>Deep House Night</h3>
-                    <p>Vibra nocturna y electrónica fina.</p>
-                    <button class="play-btn" onclick="playAlert('Deep House Night')"><i class="fas fa-play"></i> Reproducir</button>
+                    <div class="badge free">FREE</div>
+                    <div class="mix-icon"><i class="fas fa-box-open"></i></div>
+                    <h3>Electro & Guaracha Starter</h3>
+                    <p>Temas esenciales y loops para armar la rumba sin costo.</p>
+                    <button class="play-btn" onclick="playAlert('Electro & Guaracha Starter (Free)')"><i class="fas fa-download"></i> Descargar Free</button>
                 </div>
             </div>
         </div>
