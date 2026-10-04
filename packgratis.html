@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andy DJ | Packs Gratis</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">ANDY <span>DJ</span></div>
+        <nav class="nav-links">
+            <a href="index.html">Inicio</a>
+            <a href="packgratis.html" class="active">Pack Gratis</a>
+            <a href="packpro.html">Pack Pro</a>
+            <a href="admin.html">Admin</a>
+        </nav>
+        <div class="menu-toggle" id="mobile-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h2>Packs <span>Gratis</span></h2>
+            <p>Descarga libremente material esencial para tus mezclas.</p>
+        </div>
+    </section>
+
+    <section class="music">
+        <div class="container">
+            <div class="mix-grid">
+                <div class="mix-card">
+                    <div class="badge free">FREE</div>
+                    <div class="mix-icon"><i class="fas fa-box-open"></i></div>
+                    <h3>Pack Reggaetón Vol. 1</h3>
+                    <p>Ediciones especiales y edits listos para mezclar en vivo (Gratis).</p>
+                    <button class="play-btn" onclick="playAlert('Pack Reggaetón Vol. 1 (Free)')"><i class="fas fa-download"></i> Descargar Free</button>
+                </div>
+
+                <div class="mix-card">
+                    <div class="badge free">FREE</div>
+                    <div class="mix-icon"><i class="fas fa-box-open"></i></div>
+                    <h3>Electro & Guaracha Starter</h3>
+                    <p>Temas esenciales y loops para armar la rumba sin costo.</p>
+                    <button class="play-btn" onclick="playAlert('Electro & Guaracha Starter (Free)')"><i class="fas fa-download"></i> Descargar Free</button>
+                </div>
+
+                <div class="mix-card">
+                    <div class="badge free">FREE</div>
+                    <div class="mix-icon"><i class="fas fa-box-open"></i></div>
+                    <h3>Dembow & Perreo Essentials</h3>
+                    <p>Los beats más sonados de la calle listos para tu set.</p>
+                    <button class="play-btn" onclick="playAlert('Dembow & Perreo Essentials (Free)')"><i class="fas fa-download"></i> Descargar Free</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Andy DJ. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
