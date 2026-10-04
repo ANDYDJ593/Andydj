@@ -190,7 +190,7 @@ header {
     font-size: 0.9rem;
 }
 
-/* SECCIÓN MÚSICA */
+/* SECCIÓN PACKS FREE Y PRO */
 .music {
     padding: 100px 0;
 }
@@ -213,7 +213,13 @@ header {
     padding: 30px;
     border-radius: 15px;
     text-align: center;
+    position: relative;
     transition: 0.3s;
+}
+
+.mix-card.featured {
+    border-color: #ff007f;
+    box-shadow: 0 0 20px rgba(255, 0, 127, 0.2);
 }
 
 .mix-card:hover {
@@ -222,10 +228,31 @@ header {
     box-shadow: 0 5px 20px rgba(0, 243, 255, 0.2);
 }
 
+.badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 5px 12px;
+    font-size: 0.75rem;
+    font-weight: 900;
+    border-radius: 20px;
+}
+
+.badge.free {
+    background: #00f3ff;
+    color: #0b0b0f;
+}
+
+.badge.pro {
+    background: #ff007f;
+    color: #fff;
+    box-shadow: 0 0 10px #ff007f;
+}
+
 .mix-icon {
-    font-size: 50px;
+    font-size: 45px;
     color: #ff007f;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .mix-card h3 {
@@ -251,9 +278,19 @@ header {
 }
 
 .play-btn:hover {
+    background: #fff;
+    box-shadow: 0 0 10px #00f3ff;
+}
+
+.pro-btn {
     background: #ff007f;
     color: #fff;
-    box-shadow: 0 0 10px #ff007f;
+}
+
+.pro-btn:hover {
+    background: #00f3ff;
+    color: #0b0b0f;
+    box-shadow: 0 0 15px #00f3ff;
 }
 
 /* SECCIÓN CONTACTO */
